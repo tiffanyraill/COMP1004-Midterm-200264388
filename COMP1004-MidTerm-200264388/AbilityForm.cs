@@ -1,4 +1,11 @@
-﻿using System;
+﻿///@Midterm Assignmentt RAILL  COMP1004-02-w2017
+///@Tiffany Raill
+///@200264388
+///App Creation Date: 2/20/2017
+///@Description:Whenever the RollButton is clicked, the Character’s Abilities 
+///(STR, DEX, END, INT, PER, CHA) will display a random number between 3 and 30.
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
