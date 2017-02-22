@@ -22,6 +22,7 @@ namespace COMP1004_MidTerm_200264388
             this.textBoxDescription.Text = AssemblyDescription;
         }
 
+
         #region Assembly Attribute Accessors
 
         public string AssemblyTitle
