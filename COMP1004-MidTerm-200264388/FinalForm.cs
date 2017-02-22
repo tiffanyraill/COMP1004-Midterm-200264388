@@ -22,5 +22,28 @@ namespace COMP1004_MidTerm_200264388
         {
             InitializeComponent();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Getting Ready To Print...");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // STEP 1: Create a new form
+            AboutForm aboutForm = new AboutForm();
+            //STEP 2: Show the about form with ShowDialogue (a modal method that displays the form)
+            aboutForm.ShowDialog();
+        }
     }
 }

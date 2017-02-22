@@ -22,5 +22,15 @@ namespace COMP1004_MidTerm_200264388
         {
             InitializeComponent();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            //instantiate the next form
+            FinalForm finalForm = new FinalForm();
+
+            finalForm.Show();
+            //hide current form
+            this.Hide();
+        }
     }
 }

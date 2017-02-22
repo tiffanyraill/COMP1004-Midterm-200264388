@@ -30,48 +30,49 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinalForm));
             this.characterInfoGroupBox = new System.Windows.Forms.GroupBox();
-            this.statsGroupBox = new System.Windows.Forms.GroupBox();
-            this.abilitiesGroupBox = new System.Windows.Forms.GroupBox();
-            this.finalFormPictureBox = new System.Windows.Forms.PictureBox();
-            this.STRLabel = new System.Windows.Forms.Label();
-            this.dexLabel = new System.Windows.Forms.Label();
-            this.endLabel = new System.Windows.Forms.Label();
-            this.intLabel = new System.Windows.Forms.Label();
-            this.perLabel = new System.Windows.Forms.Label();
-            this.chaLabel = new System.Windows.Forms.Label();
-            this.STRTextBox = new System.Windows.Forms.TextBox();
-            this.intTextBox = new System.Windows.Forms.TextBox();
-            this.endTextBox = new System.Windows.Forms.TextBox();
-            this.dexTextBox = new System.Windows.Forms.TextBox();
-            this.perTextBox = new System.Windows.Forms.TextBox();
-            this.chaTextBox = new System.Windows.Forms.TextBox();
-            this.heightTextBox = new System.Windows.Forms.TextBox();
-            this.weightTextBox = new System.Windows.Forms.TextBox();
-            this.ageTextBox = new System.Windows.Forms.TextBox();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.jobLabel = new System.Windows.Forms.Label();
-            this.raceLabel = new System.Windows.Forms.Label();
-            this.healthPointsLabel = new System.Windows.Forms.Label();
-            this.jobTextBox = new System.Windows.Forms.TextBox();
-            this.raceTextBox = new System.Windows.Forms.TextBox();
-            this.healthPointsTextBox = new System.Windows.Forms.TextBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.weightLabel = new System.Windows.Forms.Label();
-            this.heightLabel = new System.Windows.Forms.Label();
-            this.agelabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.agelabel = new System.Windows.Forms.Label();
+            this.heightLabel = new System.Windows.Forms.Label();
+            this.weightLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.ageTextBox = new System.Windows.Forms.TextBox();
+            this.weightTextBox = new System.Windows.Forms.TextBox();
+            this.heightTextBox = new System.Windows.Forms.TextBox();
+            this.statsGroupBox = new System.Windows.Forms.GroupBox();
+            this.healthPointsTextBox = new System.Windows.Forms.TextBox();
+            this.raceTextBox = new System.Windows.Forms.TextBox();
+            this.jobTextBox = new System.Windows.Forms.TextBox();
+            this.healthPointsLabel = new System.Windows.Forms.Label();
+            this.raceLabel = new System.Windows.Forms.Label();
+            this.jobLabel = new System.Windows.Forms.Label();
+            this.abilitiesGroupBox = new System.Windows.Forms.GroupBox();
+            this.chaTextBox = new System.Windows.Forms.TextBox();
+            this.perTextBox = new System.Windows.Forms.TextBox();
+            this.dexTextBox = new System.Windows.Forms.TextBox();
+            this.endTextBox = new System.Windows.Forms.TextBox();
+            this.intTextBox = new System.Windows.Forms.TextBox();
+            this.STRTextBox = new System.Windows.Forms.TextBox();
+            this.chaLabel = new System.Windows.Forms.Label();
+            this.perLabel = new System.Windows.Forms.Label();
+            this.intLabel = new System.Windows.Forms.Label();
+            this.endLabel = new System.Windows.Forms.Label();
+            this.dexLabel = new System.Windows.Forms.Label();
+            this.STRLabel = new System.Windows.Forms.Label();
+            this.finalFormPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitButton = new System.Windows.Forms.Button();
             this.characterInfoGroupBox.SuspendLayout();
             this.statsGroupBox.SuspendLayout();
             this.abilitiesGroupBox.SuspendLayout();
@@ -98,6 +99,86 @@
             this.characterInfoGroupBox.TabStop = false;
             this.characterInfoGroupBox.Text = "Character Information";
             // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Location = new System.Drawing.Point(7, 156);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(42, 20);
+            this.titleLabel.TabIndex = 9;
+            this.titleLabel.Text = "Title:";
+            // 
+            // agelabel
+            // 
+            this.agelabel.AutoSize = true;
+            this.agelabel.Location = new System.Drawing.Point(6, 89);
+            this.agelabel.Name = "agelabel";
+            this.agelabel.Size = new System.Drawing.Size(42, 20);
+            this.agelabel.TabIndex = 8;
+            this.agelabel.Text = "Age:";
+            // 
+            // heightLabel
+            // 
+            this.heightLabel.AutoSize = true;
+            this.heightLabel.Location = new System.Drawing.Point(191, 34);
+            this.heightLabel.Name = "heightLabel";
+            this.heightLabel.Size = new System.Drawing.Size(60, 20);
+            this.heightLabel.TabIndex = 7;
+            this.heightLabel.Text = "Height:";
+            // 
+            // weightLabel
+            // 
+            this.weightLabel.AutoSize = true;
+            this.weightLabel.Location = new System.Drawing.Point(191, 89);
+            this.weightLabel.Name = "weightLabel";
+            this.weightLabel.Size = new System.Drawing.Size(63, 20);
+            this.weightLabel.TabIndex = 6;
+            this.weightLabel.Text = "Weight:";
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(7, 34);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(55, 20);
+            this.nameLabel.TabIndex = 5;
+            this.nameLabel.Text = "Name:";
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.Location = new System.Drawing.Point(76, 156);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(272, 26);
+            this.titleTextBox.TabIndex = 4;
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(76, 34);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(100, 26);
+            this.nameTextBox.TabIndex = 3;
+            // 
+            // ageTextBox
+            // 
+            this.ageTextBox.Location = new System.Drawing.Point(76, 89);
+            this.ageTextBox.Name = "ageTextBox";
+            this.ageTextBox.Size = new System.Drawing.Size(100, 26);
+            this.ageTextBox.TabIndex = 2;
+            // 
+            // weightTextBox
+            // 
+            this.weightTextBox.Location = new System.Drawing.Point(248, 89);
+            this.weightTextBox.Name = "weightTextBox";
+            this.weightTextBox.Size = new System.Drawing.Size(100, 26);
+            this.weightTextBox.TabIndex = 1;
+            // 
+            // heightTextBox
+            // 
+            this.heightTextBox.Location = new System.Drawing.Point(248, 34);
+            this.heightTextBox.Name = "heightTextBox";
+            this.heightTextBox.Size = new System.Drawing.Size(100, 26);
+            this.heightTextBox.TabIndex = 0;
+            // 
             // statsGroupBox
             // 
             this.statsGroupBox.Controls.Add(this.healthPointsTextBox);
@@ -112,6 +193,54 @@
             this.statsGroupBox.TabIndex = 1;
             this.statsGroupBox.TabStop = false;
             this.statsGroupBox.Text = "Stats";
+            // 
+            // healthPointsTextBox
+            // 
+            this.healthPointsTextBox.Location = new System.Drawing.Point(196, 127);
+            this.healthPointsTextBox.Name = "healthPointsTextBox";
+            this.healthPointsTextBox.Size = new System.Drawing.Size(100, 26);
+            this.healthPointsTextBox.TabIndex = 5;
+            // 
+            // raceTextBox
+            // 
+            this.raceTextBox.Location = new System.Drawing.Point(196, 83);
+            this.raceTextBox.Name = "raceTextBox";
+            this.raceTextBox.Size = new System.Drawing.Size(100, 26);
+            this.raceTextBox.TabIndex = 4;
+            // 
+            // jobTextBox
+            // 
+            this.jobTextBox.Location = new System.Drawing.Point(196, 37);
+            this.jobTextBox.Name = "jobTextBox";
+            this.jobTextBox.Size = new System.Drawing.Size(100, 26);
+            this.jobTextBox.TabIndex = 3;
+            // 
+            // healthPointsLabel
+            // 
+            this.healthPointsLabel.AutoSize = true;
+            this.healthPointsLabel.Location = new System.Drawing.Point(34, 133);
+            this.healthPointsLabel.Name = "healthPointsLabel";
+            this.healthPointsLabel.Size = new System.Drawing.Size(108, 20);
+            this.healthPointsLabel.TabIndex = 2;
+            this.healthPointsLabel.Text = "Health Points:";
+            // 
+            // raceLabel
+            // 
+            this.raceLabel.AutoSize = true;
+            this.raceLabel.Location = new System.Drawing.Point(91, 95);
+            this.raceLabel.Name = "raceLabel";
+            this.raceLabel.Size = new System.Drawing.Size(51, 20);
+            this.raceLabel.TabIndex = 1;
+            this.raceLabel.Text = "Race:";
+            // 
+            // jobLabel
+            // 
+            this.jobLabel.AutoSize = true;
+            this.jobLabel.Location = new System.Drawing.Point(103, 43);
+            this.jobLabel.Name = "jobLabel";
+            this.jobLabel.Size = new System.Drawing.Size(39, 20);
+            this.jobLabel.TabIndex = 0;
+            this.jobLabel.Text = "Job:";
             // 
             // abilitiesGroupBox
             // 
@@ -134,31 +263,80 @@
             this.abilitiesGroupBox.TabStop = false;
             this.abilitiesGroupBox.Text = "Abilities";
             // 
-            // finalFormPictureBox
+            // chaTextBox
             // 
-            this.finalFormPictureBox.Location = new System.Drawing.Point(419, 287);
-            this.finalFormPictureBox.Name = "finalFormPictureBox";
-            this.finalFormPictureBox.Size = new System.Drawing.Size(302, 346);
-            this.finalFormPictureBox.TabIndex = 3;
-            this.finalFormPictureBox.TabStop = false;
+            this.chaTextBox.Location = new System.Drawing.Point(100, 249);
+            this.chaTextBox.Name = "chaTextBox";
+            this.chaTextBox.ReadOnly = true;
+            this.chaTextBox.Size = new System.Drawing.Size(100, 26);
+            this.chaTextBox.TabIndex = 11;
             // 
-            // STRLabel
+            // perTextBox
             // 
-            this.STRLabel.AutoSize = true;
-            this.STRLabel.Location = new System.Drawing.Point(20, 42);
-            this.STRLabel.Name = "STRLabel";
-            this.STRLabel.Size = new System.Drawing.Size(41, 20);
-            this.STRLabel.TabIndex = 0;
-            this.STRLabel.Text = "STR";
+            this.perTextBox.Location = new System.Drawing.Point(100, 211);
+            this.perTextBox.Name = "perTextBox";
+            this.perTextBox.ReadOnly = true;
+            this.perTextBox.Size = new System.Drawing.Size(100, 26);
+            this.perTextBox.TabIndex = 10;
             // 
-            // dexLabel
+            // dexTextBox
             // 
-            this.dexLabel.AutoSize = true;
-            this.dexLabel.Location = new System.Drawing.Point(20, 83);
-            this.dexLabel.Name = "dexLabel";
-            this.dexLabel.Size = new System.Drawing.Size(43, 20);
-            this.dexLabel.TabIndex = 1;
-            this.dexLabel.Text = "DEX";
+            this.dexTextBox.Location = new System.Drawing.Point(102, 83);
+            this.dexTextBox.Name = "dexTextBox";
+            this.dexTextBox.ReadOnly = true;
+            this.dexTextBox.Size = new System.Drawing.Size(100, 26);
+            this.dexTextBox.TabIndex = 9;
+            // 
+            // endTextBox
+            // 
+            this.endTextBox.Location = new System.Drawing.Point(102, 129);
+            this.endTextBox.Name = "endTextBox";
+            this.endTextBox.ReadOnly = true;
+            this.endTextBox.Size = new System.Drawing.Size(100, 26);
+            this.endTextBox.TabIndex = 8;
+            // 
+            // intTextBox
+            // 
+            this.intTextBox.Location = new System.Drawing.Point(102, 169);
+            this.intTextBox.Name = "intTextBox";
+            this.intTextBox.ReadOnly = true;
+            this.intTextBox.Size = new System.Drawing.Size(100, 26);
+            this.intTextBox.TabIndex = 7;
+            // 
+            // STRTextBox
+            // 
+            this.STRTextBox.Location = new System.Drawing.Point(102, 42);
+            this.STRTextBox.Name = "STRTextBox";
+            this.STRTextBox.ReadOnly = true;
+            this.STRTextBox.Size = new System.Drawing.Size(100, 26);
+            this.STRTextBox.TabIndex = 6;
+            // 
+            // chaLabel
+            // 
+            this.chaLabel.AutoSize = true;
+            this.chaLabel.Location = new System.Drawing.Point(20, 249);
+            this.chaLabel.Name = "chaLabel";
+            this.chaLabel.Size = new System.Drawing.Size(43, 20);
+            this.chaLabel.TabIndex = 5;
+            this.chaLabel.Text = "CHA";
+            // 
+            // perLabel
+            // 
+            this.perLabel.AutoSize = true;
+            this.perLabel.Location = new System.Drawing.Point(20, 211);
+            this.perLabel.Name = "perLabel";
+            this.perLabel.Size = new System.Drawing.Size(42, 20);
+            this.perLabel.TabIndex = 4;
+            this.perLabel.Text = "PER";
+            // 
+            // intLabel
+            // 
+            this.intLabel.AutoSize = true;
+            this.intLabel.Location = new System.Drawing.Point(20, 169);
+            this.intLabel.Name = "intLabel";
+            this.intLabel.Size = new System.Drawing.Size(34, 20);
+            this.intLabel.TabIndex = 3;
+            this.intLabel.Text = "INT";
             // 
             // endLabel
             // 
@@ -170,208 +348,31 @@
             this.endLabel.TabIndex = 2;
             this.endLabel.Text = "END";
             // 
-            // intLabel
+            // dexLabel
             // 
-            this.intLabel.AutoSize = true;
-            this.intLabel.Location = new System.Drawing.Point(20, 169);
-            this.intLabel.Name = "intLabel";
-            this.intLabel.Size = new System.Drawing.Size(34, 20);
-            this.intLabel.TabIndex = 3;
-            this.intLabel.Text = "INT";
+            this.dexLabel.AutoSize = true;
+            this.dexLabel.Location = new System.Drawing.Point(20, 83);
+            this.dexLabel.Name = "dexLabel";
+            this.dexLabel.Size = new System.Drawing.Size(43, 20);
+            this.dexLabel.TabIndex = 1;
+            this.dexLabel.Text = "DEX";
             // 
-            // perLabel
+            // STRLabel
             // 
-            this.perLabel.AutoSize = true;
-            this.perLabel.Location = new System.Drawing.Point(20, 211);
-            this.perLabel.Name = "perLabel";
-            this.perLabel.Size = new System.Drawing.Size(42, 20);
-            this.perLabel.TabIndex = 4;
-            this.perLabel.Text = "PER";
+            this.STRLabel.AutoSize = true;
+            this.STRLabel.Location = new System.Drawing.Point(20, 42);
+            this.STRLabel.Name = "STRLabel";
+            this.STRLabel.Size = new System.Drawing.Size(41, 20);
+            this.STRLabel.TabIndex = 0;
+            this.STRLabel.Text = "STR";
             // 
-            // chaLabel
+            // finalFormPictureBox
             // 
-            this.chaLabel.AutoSize = true;
-            this.chaLabel.Location = new System.Drawing.Point(20, 249);
-            this.chaLabel.Name = "chaLabel";
-            this.chaLabel.Size = new System.Drawing.Size(43, 20);
-            this.chaLabel.TabIndex = 5;
-            this.chaLabel.Text = "CHA";
-            // 
-            // STRTextBox
-            // 
-            this.STRTextBox.Location = new System.Drawing.Point(102, 42);
-            this.STRTextBox.Name = "STRTextBox";
-            this.STRTextBox.ReadOnly = true;
-            this.STRTextBox.Size = new System.Drawing.Size(100, 26);
-            this.STRTextBox.TabIndex = 6;
-            // 
-            // intTextBox
-            // 
-            this.intTextBox.Location = new System.Drawing.Point(102, 169);
-            this.intTextBox.Name = "intTextBox";
-            this.intTextBox.ReadOnly = true;
-            this.intTextBox.Size = new System.Drawing.Size(100, 26);
-            this.intTextBox.TabIndex = 7;
-            // 
-            // endTextBox
-            // 
-            this.endTextBox.Location = new System.Drawing.Point(102, 129);
-            this.endTextBox.Name = "endTextBox";
-            this.endTextBox.ReadOnly = true;
-            this.endTextBox.Size = new System.Drawing.Size(100, 26);
-            this.endTextBox.TabIndex = 8;
-            // 
-            // dexTextBox
-            // 
-            this.dexTextBox.Location = new System.Drawing.Point(102, 83);
-            this.dexTextBox.Name = "dexTextBox";
-            this.dexTextBox.ReadOnly = true;
-            this.dexTextBox.Size = new System.Drawing.Size(100, 26);
-            this.dexTextBox.TabIndex = 9;
-            // 
-            // perTextBox
-            // 
-            this.perTextBox.Location = new System.Drawing.Point(100, 211);
-            this.perTextBox.Name = "perTextBox";
-            this.perTextBox.ReadOnly = true;
-            this.perTextBox.Size = new System.Drawing.Size(100, 26);
-            this.perTextBox.TabIndex = 10;
-            // 
-            // chaTextBox
-            // 
-            this.chaTextBox.Location = new System.Drawing.Point(100, 249);
-            this.chaTextBox.Name = "chaTextBox";
-            this.chaTextBox.ReadOnly = true;
-            this.chaTextBox.Size = new System.Drawing.Size(100, 26);
-            this.chaTextBox.TabIndex = 11;
-            // 
-            // heightTextBox
-            // 
-            this.heightTextBox.Location = new System.Drawing.Point(248, 34);
-            this.heightTextBox.Name = "heightTextBox";
-            this.heightTextBox.Size = new System.Drawing.Size(100, 26);
-            this.heightTextBox.TabIndex = 0;
-            // 
-            // weightTextBox
-            // 
-            this.weightTextBox.Location = new System.Drawing.Point(248, 89);
-            this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(100, 26);
-            this.weightTextBox.TabIndex = 1;
-            // 
-            // ageTextBox
-            // 
-            this.ageTextBox.Location = new System.Drawing.Point(76, 89);
-            this.ageTextBox.Name = "ageTextBox";
-            this.ageTextBox.Size = new System.Drawing.Size(100, 26);
-            this.ageTextBox.TabIndex = 2;
-            // 
-            // nameTextBox
-            // 
-            this.nameTextBox.Location = new System.Drawing.Point(76, 34);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 26);
-            this.nameTextBox.TabIndex = 3;
-            // 
-            // titleTextBox
-            // 
-            this.titleTextBox.Location = new System.Drawing.Point(76, 156);
-            this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(272, 26);
-            this.titleTextBox.TabIndex = 4;
-            // 
-            // jobLabel
-            // 
-            this.jobLabel.AutoSize = true;
-            this.jobLabel.Location = new System.Drawing.Point(103, 43);
-            this.jobLabel.Name = "jobLabel";
-            this.jobLabel.Size = new System.Drawing.Size(39, 20);
-            this.jobLabel.TabIndex = 0;
-            this.jobLabel.Text = "Job:";
-            // 
-            // raceLabel
-            // 
-            this.raceLabel.AutoSize = true;
-            this.raceLabel.Location = new System.Drawing.Point(91, 95);
-            this.raceLabel.Name = "raceLabel";
-            this.raceLabel.Size = new System.Drawing.Size(51, 20);
-            this.raceLabel.TabIndex = 1;
-            this.raceLabel.Text = "Race:";
-            // 
-            // healthPointsLabel
-            // 
-            this.healthPointsLabel.AutoSize = true;
-            this.healthPointsLabel.Location = new System.Drawing.Point(34, 133);
-            this.healthPointsLabel.Name = "healthPointsLabel";
-            this.healthPointsLabel.Size = new System.Drawing.Size(108, 20);
-            this.healthPointsLabel.TabIndex = 2;
-            this.healthPointsLabel.Text = "Health Points:";
-            // 
-            // jobTextBox
-            // 
-            this.jobTextBox.Location = new System.Drawing.Point(196, 37);
-            this.jobTextBox.Name = "jobTextBox";
-            this.jobTextBox.Size = new System.Drawing.Size(100, 26);
-            this.jobTextBox.TabIndex = 3;
-            // 
-            // raceTextBox
-            // 
-            this.raceTextBox.Location = new System.Drawing.Point(196, 83);
-            this.raceTextBox.Name = "raceTextBox";
-            this.raceTextBox.Size = new System.Drawing.Size(100, 26);
-            this.raceTextBox.TabIndex = 4;
-            // 
-            // healthPointsTextBox
-            // 
-            this.healthPointsTextBox.Location = new System.Drawing.Point(196, 127);
-            this.healthPointsTextBox.Name = "healthPointsTextBox";
-            this.healthPointsTextBox.Size = new System.Drawing.Size(100, 26);
-            this.healthPointsTextBox.TabIndex = 5;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(7, 34);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(55, 20);
-            this.nameLabel.TabIndex = 5;
-            this.nameLabel.Text = "Name:";
-            // 
-            // weightLabel
-            // 
-            this.weightLabel.AutoSize = true;
-            this.weightLabel.Location = new System.Drawing.Point(191, 89);
-            this.weightLabel.Name = "weightLabel";
-            this.weightLabel.Size = new System.Drawing.Size(63, 20);
-            this.weightLabel.TabIndex = 6;
-            this.weightLabel.Text = "Weight:";
-            // 
-            // heightLabel
-            // 
-            this.heightLabel.AutoSize = true;
-            this.heightLabel.Location = new System.Drawing.Point(191, 34);
-            this.heightLabel.Name = "heightLabel";
-            this.heightLabel.Size = new System.Drawing.Size(60, 20);
-            this.heightLabel.TabIndex = 7;
-            this.heightLabel.Text = "Height:";
-            // 
-            // agelabel
-            // 
-            this.agelabel.AutoSize = true;
-            this.agelabel.Location = new System.Drawing.Point(6, 89);
-            this.agelabel.Name = "agelabel";
-            this.agelabel.Size = new System.Drawing.Size(42, 20);
-            this.agelabel.TabIndex = 8;
-            this.agelabel.Text = "Age:";
-            // 
-            // titleLabel
-            // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Location = new System.Drawing.Point(7, 156);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(42, 20);
-            this.titleLabel.TabIndex = 9;
-            this.titleLabel.Text = "Title:";
+            this.finalFormPictureBox.Location = new System.Drawing.Point(419, 287);
+            this.finalFormPictureBox.Name = "finalFormPictureBox";
+            this.finalFormPictureBox.Size = new System.Drawing.Size(302, 346);
+            this.finalFormPictureBox.TabIndex = 3;
+            this.finalFormPictureBox.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -404,6 +405,7 @@
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.printToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -416,6 +418,7 @@
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -426,6 +429,18 @@
             this.editToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
+            // fontToolStripMenuItem
+            // 
+            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.fontToolStripMenuItem.Text = "&Font";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(185, 6);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -435,33 +450,33 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(208, 6);
-            // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // fontToolStripMenuItem
+            // toolStripSeparator5
             // 
-            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.fontToolStripMenuItem.Text = "&Font";
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(156, 6);
             // 
-            // toolStripSeparator1
+            // exitButton
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            this.exitButton.Location = new System.Drawing.Point(634, 673);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(87, 35);
+            this.exitButton.TabIndex = 5;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // FinalForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(753, 660);
+            this.ClientSize = new System.Drawing.Size(753, 720);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.finalFormPictureBox);
             this.Controls.Add(this.abilitiesGroupBox);
             this.Controls.Add(this.statsGroupBox);
@@ -531,5 +546,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.Button exitButton;
     }
 }
