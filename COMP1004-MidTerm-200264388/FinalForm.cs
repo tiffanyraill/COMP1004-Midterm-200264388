@@ -16,8 +16,10 @@ using System.Windows.Forms;
 
 namespace COMP1004_MidTerm_200264388
 {
+   
     public partial class FinalForm : Form
     {
+        public JobForm previousForm { get; set; }
         public FinalForm()
         {
             InitializeComponent();

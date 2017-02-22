@@ -18,6 +18,8 @@ namespace COMP1004_MidTerm_200264388
 {
     public partial class JobForm : Form
     {
+        //pass a reference to the current form to the next form
+        public RaceForm previousForm;
         public JobForm()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace COMP1004_MidTerm_200264388
         {
             //instantiate the next form
             FinalForm finalForm = new FinalForm();
-
+            finalForm.previousForm = this; 
             finalForm.Show();
             //hide current form
             this.Hide();
