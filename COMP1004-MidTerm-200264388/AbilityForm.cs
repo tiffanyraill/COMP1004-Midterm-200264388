@@ -23,6 +23,7 @@ namespace COMP1004_MidTerm_200264388
         // create new Random Number object
         Random random = new Random();
 
+
         public AbilityForm()
         {
             InitializeComponent();
@@ -59,9 +60,20 @@ namespace COMP1004_MidTerm_200264388
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Character character = Program.character;
+           
+
+            character.STR = STRTextBox.Text;
+            character.DEX = DEXTextBox.Text;
+            character.END = ENDTextBox.Text;
+            character.INT = INTTextBox.Text;
+            character.PER = PERTextBox.Text;
+            character.CHA = CHATextBox.Text;
+
             //instantiate the next form
             RaceForm raceForm = new RaceForm();
-
+            raceForm.previousForm = this;
+            //go to next form
             raceForm.Show();
             //hide current form
              this.Hide();

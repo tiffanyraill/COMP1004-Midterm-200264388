@@ -27,6 +27,7 @@ namespace COMP1004_MidTerm_200264388
         private int _INT;
         private int _PER;
         private int _CHA;
+        private string _race;
         public RaceForm()
         {
             InitializeComponent();
@@ -34,6 +35,11 @@ namespace COMP1004_MidTerm_200264388
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            //store selected race
+            Character character = Program.character;
+
+            character.Race = this._race;
+
             //instantiate the next form
             JobForm jobForm = new JobForm();
 
@@ -47,6 +53,9 @@ namespace COMP1004_MidTerm_200264388
         private void humanRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             CharacterPictureBox.Image = Properties.Resources.M_Human1;
+            RacialBonusTextBox.Text = "Abilities have increased by 5";
+
+            RadioButton race = (RadioButton)sender;
         }
 
         //If the user selects the Dwarf Race option, 
