@@ -35,7 +35,7 @@
             this.rogueRadioButton = new System.Windows.Forms.RadioButton();
             this.soldierRadioButton = new System.Windows.Forms.RadioButton();
             this.healthLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.healthTextBox = new System.Windows.Forms.TextBox();
             this.jobGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,7 @@
             this.cultistRadioButton.TabStop = true;
             this.cultistRadioButton.Text = "Cultist";
             this.cultistRadioButton.UseVisualStyleBackColor = true;
+            this.cultistRadioButton.CheckedChanged += new System.EventHandler(this.cultistRadioButton_CheckedChanged);
             // 
             // magickerRadioButton
             // 
@@ -87,6 +88,7 @@
             this.magickerRadioButton.TabStop = true;
             this.magickerRadioButton.Text = "Magicker";
             this.magickerRadioButton.UseVisualStyleBackColor = true;
+            this.magickerRadioButton.CheckedChanged += new System.EventHandler(this.magickerRadioButton_CheckedChanged);
             // 
             // rogueRadioButton
             // 
@@ -99,6 +101,7 @@
             this.rogueRadioButton.TabStop = true;
             this.rogueRadioButton.Text = "Rogue";
             this.rogueRadioButton.UseVisualStyleBackColor = true;
+            this.rogueRadioButton.CheckedChanged += new System.EventHandler(this.rogueRadioButton_CheckedChanged);
             // 
             // soldierRadioButton
             // 
@@ -111,6 +114,7 @@
             this.soldierRadioButton.TabStop = true;
             this.soldierRadioButton.Text = "Soldier";
             this.soldierRadioButton.UseVisualStyleBackColor = true;
+            this.soldierRadioButton.CheckedChanged += new System.EventHandler(this.soldierRadioButton_CheckedChanged);
             // 
             // healthLabel
             // 
@@ -122,23 +126,24 @@
             this.healthLabel.TabIndex = 5;
             this.healthLabel.Text = "Health";
             // 
-            // textBox1
+            // healthTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(157, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 44);
-            this.textBox1.TabIndex = 6;
+            this.healthTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthTextBox.Location = new System.Drawing.Point(157, 206);
+            this.healthTextBox.Name = "healthTextBox";
+            this.healthTextBox.Size = new System.Drawing.Size(100, 35);
+            this.healthTextBox.TabIndex = 6;
             // 
             // JobForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(515, 350);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.healthTextBox);
             this.Controls.Add(this.healthLabel);
             this.Controls.Add(this.jobGroupBox);
             this.Controls.Add(this.NextButton);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "JobForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select the Character\'s Job";
@@ -158,6 +163,6 @@
         private System.Windows.Forms.RadioButton rogueRadioButton;
         private System.Windows.Forms.RadioButton soldierRadioButton;
         private System.Windows.Forms.Label healthLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox healthTextBox;
     }
 }

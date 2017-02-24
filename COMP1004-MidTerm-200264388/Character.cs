@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace COMP1004_MidTerm_200264388
 {
@@ -21,5 +22,7 @@ namespace COMP1004_MidTerm_200264388
         public string CHA { get; set; }
 
         public string Race { get; set; }
+
+        public string Health { get; set; }
     }
 }

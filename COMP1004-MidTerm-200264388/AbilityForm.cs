@@ -62,7 +62,6 @@ namespace COMP1004_MidTerm_200264388
         {
             Character character = Program.character;
            
-
             character.STR = STRTextBox.Text;
             character.DEX = DEXTextBox.Text;
             character.END = ENDTextBox.Text;

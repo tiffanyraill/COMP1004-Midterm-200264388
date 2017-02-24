@@ -223,6 +223,7 @@
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RollButton);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "AbilityForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Roll Your Abilities";

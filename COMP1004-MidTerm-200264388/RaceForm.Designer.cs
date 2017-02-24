@@ -66,7 +66,7 @@
             // 
             this.RacialBonusLabel.AutoSize = true;
             this.RacialBonusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RacialBonusLabel.Location = new System.Drawing.Point(6, 366);
+            this.RacialBonusLabel.Location = new System.Drawing.Point(12, 358);
             this.RacialBonusLabel.Name = "RacialBonusLabel";
             this.RacialBonusLabel.Size = new System.Drawing.Size(166, 29);
             this.RacialBonusLabel.TabIndex = 6;
@@ -74,10 +74,11 @@
             // 
             // RacialBonusTextBox
             // 
-            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RacialBonusTextBox.Location = new System.Drawing.Point(12, 400);
+            this.RacialBonusTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RacialBonusTextBox.Location = new System.Drawing.Point(11, 390);
+            this.RacialBonusTextBox.Multiline = true;
             this.RacialBonusTextBox.Name = "RacialBonusTextBox";
-            this.RacialBonusTextBox.Size = new System.Drawing.Size(287, 39);
+            this.RacialBonusTextBox.Size = new System.Drawing.Size(613, 58);
             this.RacialBonusTextBox.TabIndex = 7;
             // 
             // raceGroupBox
@@ -152,6 +153,7 @@
             this.Controls.Add(this.CharacterPictureBox);
             this.Controls.Add(this.NextButton);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "RaceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Character Race";
