@@ -129,5 +129,16 @@ namespace COMP1004_MidTerm_200264388
 
             this._race = race.Text;
         }
+
+        //if no radio button is selected, default to Human
+        private void RaceForm_Load(object sender, EventArgs e)
+        {
+ 
+            if (Program.character.Race == "")
+            {
+                humanRadioButton.AutoCheck = true;
+            }
+
+        }
     }
 }

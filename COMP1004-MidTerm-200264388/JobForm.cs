@@ -21,11 +21,11 @@ namespace COMP1004_MidTerm_200264388
         //pass a reference to the current form to the next form
         public RaceForm previousForm;
 
-        private int _DEXHealth;
-        private int _ENDHealth;
-        private int _INTHealth;
-        private int _CHAHealth;
-
+        private int _DEXHealth = Convert.ToInt32(Program.character.DEX);
+        private int _ENDHealth = Convert.ToInt32(Program.character.END);
+        private int _INTHealth = Convert.ToInt32(Program.character.INT);
+        private int _CHAHealth = Convert.ToInt32(Program.character.CHA);
+        
         private int _soldier = 30;
         private int _rogue = 28;
         private int _magicker = 15;
@@ -56,7 +56,6 @@ namespace COMP1004_MidTerm_200264388
         private void soldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             
-
             healthTextBox.Text = (_soldier + _ENDHealth).ToString();
             RadioButton race = (RadioButton)sender;
             this._race = race.Text;
@@ -65,16 +64,17 @@ namespace COMP1004_MidTerm_200264388
         //15 points and INT ability
         private void magickerRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton race = (RadioButton)sender;
+            
 
             healthTextBox.Text = (_magicker + _INTHealth).ToString();
-
+            RadioButton race = (RadioButton)sender;
             this._race = race.Text;
         }
 
         //28 points and DEX ability
         private void rogueRadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            
             RadioButton race = (RadioButton)sender;
 
             healthTextBox.Text = (_rogue + _DEXHealth).ToString();

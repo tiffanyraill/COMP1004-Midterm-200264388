@@ -87,5 +87,42 @@ namespace COMP1004_MidTerm_200264388
                 containedControl.Font = fontDialog1.Font;
             }
         }
+       
+        public void characterAbilities()
+        {
+            strTextBox.Text = Program.character.STR;
+            dexTextBox.Text = Program.character.DEX;
+            endTextBox.Text = Program.character.END;
+            intTextBox.Text = Program.character.INT;
+            perTextBox.Text = Program.character.PER;
+            chaTextBox.Text = Program.character.CHA;
+            jobTextBox.Text = Program.character.Job;
+            healthPointsTextBox.Text = Program.character.Health;
+            raceTextBox.Text = Program.character.Race;
+        }
+        //populate finalForm with character selection & picture
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            characterAbilities();
+            
+            if (raceTextBox.Text == "Human")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Human1;
+            }
+            else if (raceTextBox.Text == "Dwarf")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Dwarf1;
+            }
+            else if (raceTextBox.Text == "Elf")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Elf1;
+            }
+            else if (raceTextBox.Text == "Halfling")
+            {
+                CharacterPictureBox.Image = Properties.Resources.M_Halfling2;
+            }
+            
+        }
+
     }
 }

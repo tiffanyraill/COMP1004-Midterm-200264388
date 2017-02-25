@@ -53,14 +53,14 @@
             this.dexTextBox = new System.Windows.Forms.TextBox();
             this.endTextBox = new System.Windows.Forms.TextBox();
             this.intTextBox = new System.Windows.Forms.TextBox();
-            this.STRTextBox = new System.Windows.Forms.TextBox();
+            this.strTextBox = new System.Windows.Forms.TextBox();
             this.chaLabel = new System.Windows.Forms.Label();
             this.perLabel = new System.Windows.Forms.Label();
             this.intLabel = new System.Windows.Forms.Label();
             this.endLabel = new System.Windows.Forms.Label();
             this.dexLabel = new System.Windows.Forms.Label();
             this.STRLabel = new System.Windows.Forms.Label();
-            this.finalFormPictureBox = new System.Windows.Forms.PictureBox();
+            this.CharacterPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -77,7 +77,7 @@
             this.characterInfoGroupBox.SuspendLayout();
             this.statsGroupBox.SuspendLayout();
             this.abilitiesGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.finalFormPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -252,7 +252,7 @@
             this.abilitiesGroupBox.Controls.Add(this.dexTextBox);
             this.abilitiesGroupBox.Controls.Add(this.endTextBox);
             this.abilitiesGroupBox.Controls.Add(this.intTextBox);
-            this.abilitiesGroupBox.Controls.Add(this.STRTextBox);
+            this.abilitiesGroupBox.Controls.Add(this.strTextBox);
             this.abilitiesGroupBox.Controls.Add(this.chaLabel);
             this.abilitiesGroupBox.Controls.Add(this.perLabel);
             this.abilitiesGroupBox.Controls.Add(this.intLabel);
@@ -307,13 +307,13 @@
             this.intTextBox.Size = new System.Drawing.Size(100, 35);
             this.intTextBox.TabIndex = 7;
             // 
-            // STRTextBox
+            // strTextBox
             // 
-            this.STRTextBox.Location = new System.Drawing.Point(102, 42);
-            this.STRTextBox.Name = "STRTextBox";
-            this.STRTextBox.ReadOnly = true;
-            this.STRTextBox.Size = new System.Drawing.Size(100, 35);
-            this.STRTextBox.TabIndex = 6;
+            this.strTextBox.Location = new System.Drawing.Point(102, 42);
+            this.strTextBox.Name = "strTextBox";
+            this.strTextBox.ReadOnly = true;
+            this.strTextBox.Size = new System.Drawing.Size(100, 35);
+            this.strTextBox.TabIndex = 6;
             // 
             // chaLabel
             // 
@@ -369,13 +369,13 @@
             this.STRLabel.TabIndex = 0;
             this.STRLabel.Text = "STR";
             // 
-            // finalFormPictureBox
+            // CharacterPictureBox
             // 
-            this.finalFormPictureBox.Location = new System.Drawing.Point(439, 287);
-            this.finalFormPictureBox.Name = "finalFormPictureBox";
-            this.finalFormPictureBox.Size = new System.Drawing.Size(302, 346);
-            this.finalFormPictureBox.TabIndex = 3;
-            this.finalFormPictureBox.TabStop = false;
+            this.CharacterPictureBox.Location = new System.Drawing.Point(439, 287);
+            this.CharacterPictureBox.Name = "CharacterPictureBox";
+            this.CharacterPictureBox.Size = new System.Drawing.Size(302, 346);
+            this.CharacterPictureBox.TabIndex = 3;
+            this.CharacterPictureBox.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -487,7 +487,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(753, 720);
             this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.finalFormPictureBox);
+            this.Controls.Add(this.CharacterPictureBox);
             this.Controls.Add(this.abilitiesGroupBox);
             this.Controls.Add(this.statsGroupBox);
             this.Controls.Add(this.characterInfoGroupBox);
@@ -504,7 +504,7 @@
             this.statsGroupBox.PerformLayout();
             this.abilitiesGroupBox.ResumeLayout(false);
             this.abilitiesGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.finalFormPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CharacterPictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -538,14 +538,14 @@
         private System.Windows.Forms.TextBox dexTextBox;
         private System.Windows.Forms.TextBox endTextBox;
         private System.Windows.Forms.TextBox intTextBox;
-        private System.Windows.Forms.TextBox STRTextBox;
+        private System.Windows.Forms.TextBox strTextBox;
         private System.Windows.Forms.Label chaLabel;
         private System.Windows.Forms.Label perLabel;
         private System.Windows.Forms.Label intLabel;
         private System.Windows.Forms.Label endLabel;
         private System.Windows.Forms.Label dexLabel;
         private System.Windows.Forms.Label STRLabel;
-        private System.Windows.Forms.PictureBox finalFormPictureBox;
+        private System.Windows.Forms.PictureBox CharacterPictureBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;

@@ -16,7 +16,7 @@ namespace COMP1004_MidTerm_200264388
        
 
         [STAThread]
-        static void Main()  
+        public static void Main()  
         {
             character = new Character();
             Application.EnableVisualStyles();

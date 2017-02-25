@@ -24,5 +24,6 @@ namespace COMP1004_MidTerm_200264388
         public string Race { get; set; }
 
         public string Health { get; set; }
+        public string Job { get; set; }
     }
 }
