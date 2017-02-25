@@ -47,5 +47,45 @@ namespace COMP1004_MidTerm_200264388
             //STEP 2: Show the about form with ShowDialogue (a modal method that displays the form)
             aboutForm.ShowDialog();
         }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            fontDialog1.Apply += new System.EventHandler(fontDialog1_Apply);
+
+            System.Drawing.Font oldFont = this.Font;
+            DialogResult result = fontDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                fontDialog1_Apply(this.nameTextBox, new System.EventArgs());
+                fontDialog1_Apply(this.nameLabel, new System.EventArgs());
+                fontDialog1_Apply(this.heightTextBox, new System.EventArgs());
+                fontDialog1_Apply(this.heightLabel, new System.EventArgs());
+                fontDialog1_Apply(this.ageTextBox, new System.EventArgs());
+                fontDialog1_Apply(this.ageLabel, new System.EventArgs());
+                fontDialog1_Apply(this.weightTextBox, new System.EventArgs());
+                fontDialog1_Apply(this.weightLabel, new System.EventArgs());
+
+            }
+            // If Cancel is clicked, set the font back to
+            // the original font.
+            else if (result == DialogResult.Cancel)
+            {
+                this.Font = oldFont;
+                foreach (Control containedControl in this.Controls)
+                {
+                    containedControl.Font = oldFont;
+                }
+            } 
+        }
+        private void fontDialog1_Apply(object sender, System.EventArgs e)
+        {
+
+            this.Font = fontDialog1.Font;
+            foreach (Control containedControl in this.Controls)
+            {
+                containedControl.Font = fontDialog1.Font;
+            }
+        }
     }
 }

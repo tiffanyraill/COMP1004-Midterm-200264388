@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FinalForm));
             this.characterInfoGroupBox = new System.Windows.Forms.GroupBox();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.agelabel = new System.Windows.Forms.Label();
+            this.ageLabel = new System.Windows.Forms.Label();
             this.heightLabel = new System.Windows.Forms.Label();
             this.weightLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
@@ -73,6 +73,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.exitButton = new System.Windows.Forms.Button();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.characterInfoGroupBox.SuspendLayout();
             this.statsGroupBox.SuspendLayout();
             this.abilitiesGroupBox.SuspendLayout();
@@ -83,7 +84,7 @@
             // characterInfoGroupBox
             // 
             this.characterInfoGroupBox.Controls.Add(this.titleLabel);
-            this.characterInfoGroupBox.Controls.Add(this.agelabel);
+            this.characterInfoGroupBox.Controls.Add(this.ageLabel);
             this.characterInfoGroupBox.Controls.Add(this.heightLabel);
             this.characterInfoGroupBox.Controls.Add(this.weightLabel);
             this.characterInfoGroupBox.Controls.Add(this.nameLabel);
@@ -109,14 +110,14 @@
             this.titleLabel.TabIndex = 9;
             this.titleLabel.Text = "Title:";
             // 
-            // agelabel
+            // ageLabel
             // 
-            this.agelabel.AutoSize = true;
-            this.agelabel.Location = new System.Drawing.Point(29, 86);
-            this.agelabel.Name = "agelabel";
-            this.agelabel.Size = new System.Drawing.Size(62, 29);
-            this.agelabel.TabIndex = 8;
-            this.agelabel.Text = "Age:";
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.Location = new System.Drawing.Point(29, 86);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(62, 29);
+            this.ageLabel.TabIndex = 8;
+            this.ageLabel.Text = "Age:";
             // 
             // heightLabel
             // 
@@ -435,13 +436,14 @@
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.fontToolStripMenuItem.Text = "&Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(185, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // helpToolStripMenuItem
             // 
@@ -473,6 +475,12 @@
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.fontDialog1.MaxSize = 18;
+            this.fontDialog1.MinSize = 10;
             // 
             // FinalForm
             // 
@@ -508,7 +516,7 @@
 
         private System.Windows.Forms.GroupBox characterInfoGroupBox;
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label agelabel;
+        private System.Windows.Forms.Label ageLabel;
         private System.Windows.Forms.Label heightLabel;
         private System.Windows.Forms.Label weightLabel;
         private System.Windows.Forms.Label nameLabel;
@@ -550,5 +558,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }

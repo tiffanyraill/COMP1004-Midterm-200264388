@@ -55,10 +55,10 @@ namespace COMP1004_MidTerm_200264388
         //30  pts and END ability
         private void soldierRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            RadioButton race = (RadioButton)sender;
+            
 
             healthTextBox.Text = (_soldier + _ENDHealth).ToString();
-            
+            RadioButton race = (RadioButton)sender;
             this._race = race.Text;
         }
 
